@@ -1,4 +1,4 @@
-import { GTPMessage, HummanMessage, TypingLoader } from "../../components";
+import { GTPMessage, HummanMessage, TextMessageBox, TypingLoader } from "../../components";
 
 export function OrthographyPage() {
   return (
@@ -12,6 +12,10 @@ export function OrthographyPage() {
           <TypingLoader className="fade-in" />
         </div>
       </div>
+
+      <TextMessageBox
+        onSendMessage={(message) => console.log(message)}
+      />
     </div>
   )
 }
