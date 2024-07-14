@@ -47,6 +47,7 @@ export function OrthographyPage() {
 
       <TextMessageBox
         onSendMessage={(message) => handleMessage(message)}
+        placeholder="Escribe tu mensaje"
       />
     </div>
   )
